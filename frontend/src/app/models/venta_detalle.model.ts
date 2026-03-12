@@ -1,0 +1,1 @@
+export interface VentaDetalle {\n  id?: number;\n  ventaId?: number;\n  productoId?: number;\n  cantidad?: number;\n  precioUnitario?: number;\n  subtotal?: number;\n}}\n

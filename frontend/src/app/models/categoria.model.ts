@@ -1,0 +1,1 @@
+export interface Categoria {\n  id?: number;\n  nombre?: string;\n  descripcion?: string;\n}}\n

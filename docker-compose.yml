@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: practica_nro01
+      POSTGRES_USER: practica_nro01
+      POSTGRES_PASSWORD: practica_nro01
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  backend:
+    build:
+      context: ./backend
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/practica_nro01
+      SPRING_DATASOURCE_USERNAME: practica_nro01
+      SPRING_DATASOURCE_PASSWORD: practica_nro01
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+volumes:
+  pgdata:

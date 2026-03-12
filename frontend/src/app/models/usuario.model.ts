@@ -1,0 +1,1 @@
+export interface Usuario {\n  id?: number;\n  username?: string;\n  password?: string;\n  role?: string;\n  enabled?: boolean;\n}}\n

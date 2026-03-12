@@ -1,0 +1,1 @@
+export interface Proveedor {\n  id?: number;\n  nombre?: string;\n  telefono?: string;\n  email?: string;\n  direccion?: string;\n}}\n

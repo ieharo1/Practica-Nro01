@@ -1,0 +1,1 @@
+export interface Venta {\n  id?: number;\n  clienteId?: number;\n  fecha?: string;\n  total?: number;\n  estado?: string;\n}}\n

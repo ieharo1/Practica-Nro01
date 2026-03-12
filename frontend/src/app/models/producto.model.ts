@@ -1,0 +1,1 @@
+export interface Producto {\n  id?: number;\n  nombre?: string;\n  descripcion?: string;\n  precio?: number;\n  stock?: number;\n  categoriaId?: number;\n  proveedorId?: number;\n  sku?: string;\n  imeiSerial?: string;\n}}\n

@@ -1,0 +1,1 @@
+export interface Compra {\n  id?: number;\n  proveedorId?: number;\n  fecha?: string;\n  total?: number;\n  estado?: string;\n}}\n

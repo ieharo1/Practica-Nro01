@@ -1,0 +1,1 @@
+export interface CompraDetalle {\n  id?: number;\n  compraId?: number;\n  productoId?: number;\n  cantidad?: number;\n  precioUnitario?: number;\n  subtotal?: number;\n}}\n

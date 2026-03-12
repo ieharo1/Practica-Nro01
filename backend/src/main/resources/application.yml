@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/practica_nro01
+    username: practica_nro01
+    password: practica_nro01
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+jwt:
+  secret: "practica_nro01_secret_key_2026"
+  expiration: 86400000

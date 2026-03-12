@@ -1,0 +1,1 @@
+export interface Rol {\n  id?: number;\n  name?: string;\n  description?: string;\n}}\n

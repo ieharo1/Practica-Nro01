@@ -1,0 +1,1 @@
+export interface InventarioMovimiento {\n  id?: number;\n  productoId?: number;\n  tipo?: string;\n  cantidad?: number;\n  fecha?: string;\n  motivo?: string;\n}}\n
